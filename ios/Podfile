@@ -10,6 +10,4 @@ target 'Runner' do
   pod 'Firebase/Crashlytics', :modular_headers => true
   pod 'Firebase/Messaging', :modular_headers => true
 
-  # Habilita compatibilidad con Firebase en Flutter
-  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
