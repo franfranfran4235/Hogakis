@@ -2,13 +2,14 @@ platform :ios, '13.0'
 
 target 'Runner' do
   use_frameworks!
+  use_modular_headers!
 
-  # Firebase Pods
-  pod 'Firebase/Core'
-  pod 'Firebase/Firestore'   # Asegúrate de agregar Firestore correctamente
-  pod 'Firebase/Auth'        # Si también estás utilizando autenticación
-  pod 'Firebase/Crashlytics' # Si usas Crashlytics
-  pod 'Firebase/Messaging'   # Si usas Firebase Cloud Messaging
+  pod 'Firebase/Core', :modular_headers => true  # No es necesario en las versiones recientes
+  pod 'Firebase/Firestore', :modular_headers => true
+  pod 'Firebase/Auth', :modular_headers => true
+  pod 'Firebase/Crashlytics', :modular_headers => true
+  pod 'Firebase/Messaging', :modular_headers => true
 
-  # Otros Pods que puedas necesitar
+  # Habilita compatibilidad con Firebase en Flutter
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
