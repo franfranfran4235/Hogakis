@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "709619268670",
+    "project_id": "intertracker-ada39",
+    "storage_bucket": "intertracker-ada39.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709619268670:android:952cc389637e6e0589a56f",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp2TYWLrWX9HxKBu-UCCf1K29CXqWkSIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

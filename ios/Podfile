@@ -1,0 +1,14 @@
+platform :ios, '13.0'
+
+target 'Runner' do
+  use_frameworks!
+
+  # Firebase Pods
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'   # Asegúrate de agregar Firestore correctamente
+  pod 'Firebase/Auth'        # Si también estás utilizando autenticación
+  pod 'Firebase/Crashlytics' # Si usas Crashlytics
+  pod 'Firebase/Messaging'   # Si usas Firebase Cloud Messaging
+
+  # Otros Pods que puedas necesitar
+end
